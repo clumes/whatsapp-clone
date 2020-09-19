@@ -210,3 +210,158 @@ a {
 .search-bar input::placeholder {
   color: var(--text-gray);
 }
+
+/* Chats */
+.chats {
+  height: 48rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.chats::-webkit-scrollbar {
+  width: 0.7rem;
+  height: 3rem;
+}
+
+.chats::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-color);
+}
+
+.chat {
+  display: flex;
+  align-items: center;
+  background: var(--white);
+  padding: 1rem 0 0 2rem;
+  cursor: pointer;
+}
+
+.chat:hover {
+  background: var(--chat-hover-color);
+}
+
+.chat:hover .chat-options {
+  display: initial;
+}
+
+.active-chat {
+  background: var(--chat-active-color) !important;
+}
+
+.chat-left img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+
+.chat-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.5rem;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--chat-border);
+}
+
+/* This line removes the border bottom from the last chat */
+.chat:last-of-type .chat-right {
+  border-bottom: none;
+}
+
+.chat-right-top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.contact-name {
+  font-size: 1.7rem;
+}
+
+.chat-message,
+.chat-message-typing,
+.chat-message-group {
+  font-size: 1.5rem;
+}
+
+.chat-message,
+.chat-message-group {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 28rem;
+}
+
+.chat-message {
+  color: var(--text-gray);
+}
+
+.chat-message-group {
+  font-weight: 500;
+  color: inherit;
+}
+
+.chat-message-typing {
+  color: var(--whatsapp-green);
+  font-weight: 500;
+}
+
+.chat-date {
+  font-size: 1.2rem;
+  color: var(--text-gray);
+}
+
+.chat-right-bottom {
+  display: flex;
+}
+
+.chat-right-bottom-left {
+  display: flex;
+  align-items: flex-end;
+  flex: 1;
+}
+
+.chat-right-bottom-right {
+  display: flex;
+  align-items: center;
+}
+
+.unread-messages-number {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background: var(--whatsapp-green);
+  color: var(--white);
+  font-weight: 500;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 2rem;
+}
+
+.chat-options {
+  display: none;
+  margin-left: 0.5rem;
+}
+
+.chat-options img {
+  vertical-align: middle;
+}
+
+.single-check-mark,
+.double-check-mark {
+  margin-right: 0.2rem;
+}
+
+.single-check-mark {
+  width: 1.4rem;
+}
+
+.double-check-mark {
+  width: 2rem;
+}
+
+.image-icon,
+.microphone-icon {
+  margin-right: 0.3rem;
+}
