@@ -138,3 +138,41 @@ a {
 .sidebar-header-icons img:nth-child(2) {
   margin: 0 3rem;
 }
+
+/* Sidebar notifications */
+.sidebar-notifications {
+  display: flex;
+  align-items: center;
+  background: var(--notifications-background-color);
+  height: 9rem;
+  padding: 0 2rem;
+  cursor: pointer;
+}
+
+.sidebar-notifications > img {
+  margin-right: 2rem;
+}
+
+.sidebar-notifications-message {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.sidebar-notifications-message span {
+  font-size: 1.6rem;
+  color: var(--notifications-text-color);
+}
+
+.sidebar-notifications-message a {
+  font-size: 1.4rem;
+  color: var(--notifications-link-color);
+}
+
+.sidebar-notifications-message img {
+  vertical-align: middle;
+}
+
+.sidebar-notifications-message a:hover {
+  text-decoration: underline;
+}
