@@ -176,3 +176,37 @@ a {
 .sidebar-notifications-message a:hover {
   text-decoration: underline;
 }
+
+/* Sidebar search chat */
+.search-chat {
+  background: var(--search-bar-bg);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.search-bar {
+  display: flex;
+  padding: 1rem;
+  border-bottom: 1px solid var(--chat-border);
+}
+
+.search-bar > img {
+  width: 2.8rem;
+  background: var(--white);
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  padding-left: 1rem;
+}
+
+.search-bar input {
+  outline: none;
+  border: none;
+  padding: 1rem 1rem 1rem 2rem;
+  flex: 1;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  font-family: "Segoe UI";
+}
+
+.search-bar input::placeholder {
+  color: var(--text-gray);
+}
