@@ -50,3 +50,45 @@ a {
   --sender-message-green: #dcf8c6;
   --type-message-bar: #f0f0f0;
 }
+
+/************
+* MAIN GRID *
+*************/
+
+.grid {
+  display: grid;
+  height: 100%;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 12.8rem 1fr;
+}
+
+/*****************
+* APP BACKGROUND *
+******************/
+
+.top {
+  background: var(--background-green);
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+}
+
+.bottom {
+  background: var(--background-beige);
+  grid-column: 1 / -1;
+  grid-row: 2 / -1;
+}
+
+/******
+* APP *
+*******/
+
+.app {
+  display: grid;
+  grid-template-columns: 42rem 1fr;
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  width: 139.6rem;
+  margin: 2rem auto;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 1rem 0.05rem rgba(0, 0, 0, 0.2);
+}
