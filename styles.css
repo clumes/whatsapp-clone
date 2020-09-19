@@ -1,0 +1,52 @@
+/**************
+* BASE STYLES *
+**************/
+
+/* Overwrite browser defaults */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Segoe UI", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Variables */
+:root {
+  --background-green: #009688;
+  --background-beige: #d7dbd6;
+  --sidebar-header: #ededed;
+  --notifications-text-color: rgba(48, 48, 48, 0.96);
+  --notifications-link-color: rgba(48, 48, 48, 0.85);
+  --notifications-background-color: #9de1fe;
+  --search-bar-bg: #f6f6f6;
+  --white: #ffffff;
+  --text-gray: #919191;
+  --chat-border: #ededed;
+  --whatsapp-green: #3ccc2f;
+  --scrollbar-color: #cccccc;
+  --chat-window-scrollbar-color: #bab3ae;
+  --box-shadow-color: #d5d5d5;
+  --chat-hover-color: #f5f5f5;
+  --chat-active-color: #ebebeb;
+  --chat-window-beige: #e5ddd5;
+  --sender-message-green: #dcf8c6;
+  --type-message-bar: #f0f0f0;
+}
