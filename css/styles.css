@@ -92,3 +92,49 @@ a {
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 1rem 0.05rem rgba(0, 0, 0, 0.2);
 }
+
+/***********
+* SIDEBAR  *
+************/
+
+.sidebar {
+  grid-column: 1 / 2;
+  background: var(--white);
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+/* Sidebar header */
+.sidebar-header {
+  background: var(--sidebar-header);
+  display: flex;
+  justify-content: space-between;
+  height: 6rem;
+  padding: 1rem 2rem;
+}
+
+/* Profile image */
+.sidebar-header > img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.sidebar-header-icons {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+.sidebar-header-icons img:active {
+  background: var(--box-shadow-color);
+  border-radius: 50%;
+  box-shadow: 0 0 1px 8px var(--box-shadow-color);
+}
+
+/* Adds margin to icon in the center */
+.sidebar-header-icons img:nth-child(2) {
+  margin: 0 3rem;
+}
